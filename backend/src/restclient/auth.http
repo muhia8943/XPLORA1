@@ -1,0 +1,23 @@
+### Register a New User
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "john",
+    "email": "johndoe@gmail.com",
+    "password": "rootpassword"
+}
+
+###
+
+### Login a User
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "muhia lincorn",
+    "email": "nmmuha@gmail.com",
+    "password": "89438943"
+}
+
+###

@@ -1,0 +1,39 @@
+### Get All Tours
+GET http://localhost:3000/api/tours
+Content-Type: application/json
+
+###
+
+### Get Tour by ID
+GET http://localhost:3000/api/tours/2
+Content-Type: application/json
+
+###
+
+### Create a New Tour
+POST http://localhost:3000/api/tours
+Content-Type: application/json
+
+{
+    "category": "Adventure",
+    "tourdescription": "watching the whales",
+    "duration": "2 hours"
+}
+
+###
+
+### Update an Existing Tour
+PUT http://localhost:3000/api/tours/2
+Content-Type: application/json
+
+{
+    "category": "Adventure",
+    "tourdescription": "Hiking in the Himalayas",
+    "duration": "13 days"
+}
+
+###
+
+### Delete a Tour
+DELETE http://localhost:3000/api/tours/3
+Content-Type: application/json

@@ -1,0 +1,5 @@
+CREATE PROCEDURE spGetAllTours
+AS
+BEGIN
+    SELECT * FROM Tours;
+END;
