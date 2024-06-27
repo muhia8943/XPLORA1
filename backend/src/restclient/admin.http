@@ -23,13 +23,13 @@ Content-Type: application/json
 ###
 
 ### Update an Existing Tour
-PUT http://localhost:3000/api/tours/2
+PUT http://localhost:3000/api/tours/11
 Content-Type: application/json
 
 {
     "category": "Adventure",
-    "tourdescription": "Hiking in the Himalayas",
-    "duration": "13 days"
+    "tourdescription": "Let's go Hunting! at Maasai Mara @7,000 ksh ",
+    "duration": "2 Days"
 }
 
 ###

@@ -3,7 +3,7 @@ POST http://localhost:3000/api/auth/register
 Content-Type: application/json
 
 {
-    "username": "john",
+    "username": "john doe",
     "email": "johndoe@gmail.com",
     "password": "rootpassword"
 }
@@ -15,9 +15,18 @@ POST http://localhost:3000/api/auth/login
 Content-Type: application/json
 
 {
-    "username": "muhia lincorn",
-    "email": "nmmuha@gmail.com",
-    "password": "89438943"
+    "email": "johndoe@gmail.com",
+    "password": "rootpassword"
 }
+
+###
+### Get All Users
+GET http://localhost:3000/api/auth/users
+Content-Type: application/json
+
+###
+### Delete a User
+DELETE http://localhost:3000/api/auth/users/1
+Content-Type: application/json
 
 ###

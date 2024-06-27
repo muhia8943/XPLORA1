@@ -1,23 +1,13 @@
 CREATE PROCEDURE spLoginUser
-    @Email NVARCHAR(255)
+@Email NVARCHAR(255)
 AS
 BEGIN
-    SET NOCOUNT ON;
-
-    -- Select the user details based on the email
-    SELECT 
-        Id, 
-        Username, 
-        Password, 
-        Role, 
-        Email
-    FROM 
-        Users
-    WHERE 
-        Email = @Email;
+    SELECT id, username, password, role FROM Users WHERE email = @Email
 END
 
-DROP PROCEDURE IF EXISTS LoginUser;
+
+
+DROP PROCEDURE IF EXISTS spLoginUser;
 
 
 
